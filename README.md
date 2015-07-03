@@ -32,6 +32,7 @@ This is normal and will not happen if you use certificates issued by any CA your
 The following commands were used to create the files in the `ssl` subdirectory.
 Obviously, `vim` is only a placeholder; you can check the contents of the files for yourself.
 The relevant files are then copied into the haproxy VM via `Vagrantfile`.
+**Warning**: The OpenSSL config file is by no means a best practice example. For the purpose of the example it is very much irrelevant which exact hash algorithms, key lengths or other settings are included.
 
 ```
 $ openssl genrsa -out ca.key 2048
