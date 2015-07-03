@@ -33,6 +33,7 @@ The following commands were used to create the files in the `ssl` subdirectory.
 Obviously, `vim` is only a placeholder; you can check the contents of the files for yourself.
 The relevant files are then copied into the haproxy VM via `Vagrantfile`.
 
+```
 $ openssl genrsa -out ca.key 2048
 $ # vim ca.cnf
 $ mkdir newcerts
@@ -49,4 +50,5 @@ $ openssl ca -extensions server -extfile be03-san.cnf -config ca.cnf -in be03.cs
 $ cat be01.crt bexx.key.pem > be01_combined.crt
 $ cat be02.crt bexx.key.pem > be02_combined.crt
 $ cat be03.crt bexx.key.pem > be03_combined.crt
+```
 
