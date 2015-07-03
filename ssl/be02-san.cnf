@@ -1,0 +1,14 @@
+[ server ]
+basicConstraints       = CA:FALSE
+nsCertType             = server
+nsComment              = ''OpenSSL Generated Certificate for demo use''
+subjectKeyIdentifier   = hash
+authorityKeyIdentifier = keyid,issuer:always
+extendedKeyUsage       = serverAuth
+keyUsage               = digitalSignature, keyEncipherment
+subjectAltName = @sans
+
+[sans]
+DNS.1=be02.example.com
+DNS.2=be02
+
